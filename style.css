@@ -1,0 +1,279 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fff;
+  color: hsl(210, 10%, 33%);
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: url("./images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  padding: 80px 0 20px;
+  line-height: 60px;
+}
+
+
+ .button-1 {
+  background-color: hsl(171, 66%, 44%);
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 2em;
+  margin-right: 5px;
+  
+}
+
+.button-2 {
+  background-color: hsl(233, 100%, 69%);
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  border-radius: 2em;
+  margin-left: 5px;
+}
+
+
+button:hover {
+  cursor: pointer;
+  background-color: #76d536;
+}
+
+main {
+  padding: 0 20px;
+  margin: 30px auto;
+  max-width: 100%;
+  width: 1200px;
+}
+
+.smaller-container {
+  padding-top: 60px;
+  
+}
+
+.smaller-container p {
+  padding-top: 10px;
+}
+
+
+.flex-container {
+  display: flex;
+  padding-top: 70px;
+  overflow: hidden;
+}
+
+.desktop-block {
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-top: 25px; 
+  overflow: hidden;
+}
+
+
+.desktop-block h3 {
+  padding-top: 50px;
+}
+
+.desktop-block p {
+padding-top: 20px;
+}
+
+.devices-image {
+  padding-top: 50px;
+}
+
+ .icon-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding-top: 50px; 
+}
+
+.icon-container p {
+  padding-top: 20px;
+}
+.first-icon, .second-icon, .third-icon{
+  line-height: 30px; 
+}
+
+.icons-image {
+  padding-bottom: 15px;
+}
+
+.row-logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 8%;
+}
+
+.company-logos{
+  width: 8.2%;
+}
+
+.bottom-container {
+  padding-top: 10%;
+  line-height: 45px;
+
+}
+
+footer {
+  background-color: #f5f6f8;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: auto auto;
+  padding: 3% 1% 2% 1%;
+  margin-top: 4%;
+}
+
+.footer-logo {
+  width: 75px;
+  justify-self: center;
+  align-self: start;
+}
+
+footer a {
+	color: hsl(210, 10%, 33%);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: hsl(171, 66%, 44%);
+}
+
+.links-column-1,
+.links-column-2,
+.links-column-3 {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  line-height: 2;
+  
+}
+
+.footer-icons {
+  justify-self: end;
+  align-self: center;
+  padding-right: 15%;
+  width: 50%;
+
+}
+.footer-icons i {
+  margin-left: 7%;
+}
+
+
+@media screen and  (max-width: 812px) {
+  
+  header {
+    background-image: url(images/bg-header-mobile.png);
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 30px;
+}
+
+header h1,p {
+  padding: 40px 10px 5px 10px;
+}
+
+.button-1,
+.button-2 {
+  display: flex;
+  margin: 20px auto 12px;
+  padding-left: 90px;
+  padding-right: 90px; 
+}
+
+  .computer-image,
+  .devices-image  {
+    max-width: 100%; 
+    display:block; 
+    height: auto;
+}
+
+  .flex-container {
+    flex-direction: column;
+    width: 90%;  
+}
+
+  .smaller-container {
+    width: 90%;
+    padding-top: 30%
+  }
+
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+  }
+  .row-logos {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+  .company-logos {
+    width: 30%;
+    padding: 25px;
+}
+  
+  .bottom-container {
+    width: 90%;
+    padding-bottom: 20%;
+  }
+  
+  footer {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 3% 0 5% 0;
+}
+
+.links-column-1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.links-column-2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.links-column-3 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.footer-icons {
+    margin: 1% 0 1% 0;
+    grid-column: 1;
+    grid-row: 5;
+    justify-self: center;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-icons i {
+    margin: 0;
+}
+
+}
